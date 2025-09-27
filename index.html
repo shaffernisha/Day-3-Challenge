@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      background-color: #f5f6f8;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+      width: 100vh;
+      height: 70vh;
+      max-width: 95%;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .main{
+      flex: 1;
+      padding: 40px;
+      background:#f5f6f8;
+    }
+    .main h4 {
+      color: #666;
+      font-weight: normal;
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+    .main h2 {
+      font-size: 28px;
+      margin: 0 0 20px;
+      font-weight: bold;
+    }
+    .main h2 .light-text {
+      font-weight: normal;
+      color: #333;
+    }
+    .main p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .content {
+      margin-top: 20px;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      font-size: 15px;
+      color: #333;
+    }
+    .contact-row img {
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      object-fit: contain;
+    }
+
+    .form-container {
+      flex: 1;
+      padding: 40px;
+      background: #fff;          
+      border-radius: 15px;         
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-right: 20px;       
+    }
+
+    .form-container form label {
+      display: block;
+      margin-bottom: 6px; 
+      font-weight: bold;
+      color: #333;
+      padding-right: 10px;  
+    }
+    .form-container form input,
+    .form-container form select,
+    .form-container form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      background: #fdfdfd;
+      box-sizing: border-box; 
+    }
+    .form-container form button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(to right, #007bff, #0056d2);
+      color: #fff;
+      cursor: pointer;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <h4>WE'RE HERE TO HELP YOU</h4>
+      <h2>
+        <span>Discuss</span> 
+        <span class="light-text">Your <br>Chemical Solution Needs</span>
+      </h2>
+      <p>Are you looking for top-quality chemical solutions tailored to your needs? Reach out to us.</p> 
+      <div class="content">
+        <div class="contact-row">
+          <img src="./assets/email1.png" alt="Email">
+          <span>E-mail: soluvent***@gmail.com</span>
+        </div>
+        <div class="contact-row">
+          <img src="./assets/phone1.png" alt="Phone">
+          <span>Phone number: +123-456-7890</span>
+        </div>
+      </div>
+    </div>
+    <div class="form-container">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="sana yusra" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="yusra@gmail.com" required>
+        <label for="industry">Industry</label>
+        <select id="industry" required>
+          <option value="">Select </option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Type your message here..."></textarea> 
+        <button type="submit">➡ Get a Solution</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
